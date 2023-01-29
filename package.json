@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix --quiet ./",
+    "postinstall": "husky install",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "dev": "pnpm -C play dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "": "https://chenxingzhi1.github.io/",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "commitlint": "^17.4.2",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^33.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4",
+    "vitepress": "1.0.0-alpha.43",
+    "vue": "^3.2.45"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx}": "eslint --fix"
+  },
+  "dependencies": {
+    "@package-ui/components": "workspace:*",
+    "@package-ui/theme-chalk": "workspace:*",
+    "@package-ui/utils": "workspace:*",
+    "element-plus": "^2.2.28"
+  }
+}
