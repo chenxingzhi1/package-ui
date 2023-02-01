@@ -1,0 +1,6 @@
+.test {
+  color: red;
+  .a {
+    color: blue($color: #000000);
+  }
+}
